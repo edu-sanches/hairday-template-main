@@ -1,0 +1,11 @@
+services:
+  node:
+    image: node:22.15.0
+    container_name: hairday-template-main
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "3333:3333"
+    command: bash
+    tty: true
